@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.6;
+    zoom: 90%;
+}
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+ul, li{
+    display: block;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 550px;
+    background: url(../img/1500x500.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+/* МЕНЮ */
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav li{
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    margin-left: 75px;
+}
+
+.logo{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Бронирование */
+
+.bron{
+    display: flex;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.bron a{
+    width: 300px;
+    height: 50px;
+    border-radius: 0px 10px 10px 0px;
+    background: #009106;
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-sp{
+    display: flex;
+    margin-top: 7px;
+    justify-content: center;
+}
+
+.tour{
+    width: 300px;
+    height: 50px;
+}
+
+.tour-1{
+    background: #FFFFFF;
+    border: none;
+    border-right: 1px solid #000;
+    border-radius: 10px 0px 0px 10px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.tour-2{
+    background: #FFFFFF;
+    border: none;
+    border-right: 0.5px solid #000000;
+}
+
+.tour-3{
+    background: #FFFFFF;
+    border: none;
+    border-right: 0.5px solid #000000;
+}
+
+.tour-4{
+    background: #FFFFFF;
+    border: none;
+    border-right: 0.5px solid #000000;
+}
+
+/* ПОДРОБНЕЕ */
+
+.box {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    background: url(../img/Акции/Эльбрус/Эльбрус.jpg) center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-top: 70px;
+    border-radius: 30px;
+}
+
+.box-2{
+    background: url(../img/Акции/Абхазия/абхазия.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.box-3{
+    background: url(../img/Акции/Сиракузы/Сиракузы.png) center no-repeat;
+    background-size: cover;
+}
+
+.box-4{
+    background: url(../img/Акции/Вьетнам/вьетнам.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.box-5{
+    background: url(../img/Акции/Куба/куба.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.box-h1{
+    color: #fff;
+    text-align: center;
+    margin: 20% auto;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.text{
+    text-decoration: none;
+}
+
+.p{
+    line-height: 35px;
+    height: 100%;
+}
+
+.img-box{
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.box-tour{
+    width: 250px;
+    height: 450px;
+    background-color: #CCCCCC;
+    border-radius: 30px;
+}
+
+.hover-effect{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 8, 31, 0.62);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.box:hover .box-h1{
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+  
+.box:hover .hover-effect {
+    opacity: 1;
+}
+.box:hover .hover-text{
+    left: 5%;
+}
+
+.box:hover .hover-text-2{
+    top: 15%;
+}
+
+.box:hover .hover-text-3{
+    right: 5%;
+}
+
+.hover-text {
+    position: absolute;
+    left: -60%;
+    bottom: 10%;
+    display: block;
+    color: #fff;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.hover-text-2 {
+    position: absolute;
+    top: -60%;
+    bottom: 10%;
+    display: block;
+    color: #fff;
+    margin-left: 370px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.hover-text-3 {
+    position: absolute;
+    right: -60%;
+    bottom: 10%;
+    display: block;
+    color: #fff;
+    margin-left: 400px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ПОДВАЛ */
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background: #C4C4C4;
+    margin-top: 2300px;
+}
+
+.foot-app{
+    display: block;
+    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.foot-svg{
+    display: flex;
+    align-items: center;
+}
+
+svg:not(:first-child){
+    margin-left: 10px;
+}
+
+.footer-main{
+    display: flex;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tel{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.tel-2{
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot-h{
+    margin: 0 auto;
+    margin-left: 100px;
+}
+
+.foot-sp{
+    margin-top: 25px;
+    line-height: 40px;
+}

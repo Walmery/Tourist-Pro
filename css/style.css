@@ -1,0 +1,348 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.6;
+    zoom: 90%;
+}
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+ul, li{
+    display: block;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 550px;
+    background: url(../img/1500x500.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+/* МЕНЮ */
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav li{
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    margin-left: 75px;
+}
+
+.logo{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Бронирование */
+
+.bron{
+    display: flex;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.bron a{
+    width: 300px;
+    height: 50px;
+    border-radius: 0px 10px 10px 0px;
+    background: #009106;
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-sp{
+    display: flex;
+    margin-top: 7px;
+    justify-content: center;
+}
+
+.tour{
+    width: 300px;
+    height: 50px;
+}
+
+.tour-1{
+    background: #FFFFFF;
+    border: none;
+    border-right: 1px solid #000;
+    border-radius: 10px 0px 0px 10px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.tour-2{
+    background: #FFFFFF;
+    border: none;
+    border-right: 0.5px solid #000000;
+}
+
+.tour-3{
+    background: #FFFFFF;
+    border: none;
+    border-right: 0.5px solid #000000;
+}
+
+.tour-4{
+    background: #FFFFFF;
+    border: none;
+    border-right: 0.5px solid #000000;
+}
+
+/* О КОМПАНИИ */
+
+.comp{
+    width: 100%;
+    height: 1010px;
+    background: url(../img/346930-admin\ 1.png) center no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.comp-1{
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.comp h1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.p-1{
+    width: 300px;
+    margin-left: -15px;
+}
+
+.p-2{
+    margin-top: 60px;
+}
+
+.p-3{
+    width: 300px;
+}
+
+.comp-2{
+    display: flex;
+    margin-top: 200px;
+    margin-left: 40px;
+}
+
+.comp-1 {
+    opacity: 0;
+    transform: translateY(50px);
+}
+  
+.comp-1.element-show {
+    opacity: 1;
+    transition: all 1.3s;
+    transform: translateY(0%);
+}
+
+.protar{
+    display: flex;
+}
+
+.svg-10{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 20px;
+}
+
+.svg-11{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 180px;
+}
+
+.svg-12{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 60px
+}
+
+
+/* КОММЕНТАРИИ */
+
+.com{
+    display: flex;
+    margin-top: 70px;
+}
+
+.com__id-1{
+    display: flex;
+    width: 500px;
+    height: 215px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+}
+
+.com__id-2{
+    display: flex;
+    width: 500px;
+    height: 215px;
+    margin-left: 70px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+}
+
+.com-img{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin-left: fixed;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.com-c{
+    text-align: center;
+    margin-left: 15px;
+}
+
+.ten{
+    font-size: 16px;
+    width: 300px;
+    margin-top: -1px;
+    font-weight: bold;
+}
+
+.subscribe{
+    width: 700px;
+    height: 150px;
+    background: #DDDDDD;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.sb-in{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.sb-svg{
+    position: absolute;
+    margin-left: -260px;
+    margin-top: -5px;
+}
+
+.input{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 30px 0px 0px 30px;
+    text-align: center;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.sub-a{
+    display: flex;
+    border-left: 1px solid #000;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.sub-a p{
+    color: #000;
+    font-size: 16px;
+    margin: 12px auto;
+}
+
+.subscribe h2{
+    display: flex;
+    font-size: 26px;
+    justify-content: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ПОДВАЛ */
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background: #C4C4C4;
+    margin-top: 100px;
+}
+
+.foot-app{
+    display: block;
+    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.foot-svg{
+    display: flex;
+    align-items: center;
+}
+
+svg:not(:first-child){
+    margin-left: 10px;
+}
+
+.footer-main{
+    display: flex;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tel{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.tel-2{
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot-h{
+    margin: 0 auto;
+    margin-left: 100px;
+}
+
+.foot-sp{
+    margin-top: 25px;
+    line-height: 40px;
+}
